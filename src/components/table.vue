@@ -102,6 +102,14 @@ export default {
     }
   },
 
+  watch: {
+    conditions(newVal) {
+      if(newVal.length == 0){
+        this.matchedUsers = this.users
+      }
+    }
+  },
+
   created() {
     this.matchedUsers = this.users;
   }
