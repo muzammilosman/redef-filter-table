@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <table-filter />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TableFilter from "./components/filter.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    TableFilter
   }
 };
 </script>
@@ -24,5 +23,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.md-menu-content-container{
+  background: white !important;
 }
 </style>
